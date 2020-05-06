@@ -1,0 +1,212 @@
+.navbar {
+    padding: 1rem 2rem;
+}
+.hp__video {
+    position: relative;
+    height: 800px;
+    
+}
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: bold !important;
+}
+.gradientHero {
+    background:  linear-gradient(rgba(0, 0, 0, -0.7), rgba(0, 0, 0, 0.7));
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.gradientHero h2 {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    color: #fff;
+    font-size: 3rem;
+}
+#hpHeroVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: 100%;
+}
+.hp__section {
+    height: 540px;
+    text-align: left;
+    padding: 10%;
+    color: #fff;
+    background-position: 50% 50%, 0px 0px !important;
+    background-size: cover, cover !important;
+    background-attachment: fixed, fixed !important;
+    background-repeat: no-repeat !important;
+}
+.hp__hero2 {
+    background:  linear-gradient(rgba(0, 0, 0, -0.7), rgba(0, 0, 0, 0.7)), url(../img/home/dontmiss.jpg);
+}
+.hp__hero3 {
+    background:  linear-gradient(rgba(0, 0, 0, -0.7), rgba(0, 0, 0, 0.7)), url(https://www.overseasleisuregroup.com/images/slider-2.jpg);
+}
+.hp__hero4 {
+    background: linear-gradient(rgba(0, 0, 0, -0.7), rgba(0, 0, 0, 0.7)),url(../img/home/create.jpg);
+}
+.hp__hero5{
+    background: linear-gradient(rgba(0, 0, 0, -0.7), rgba(0, 0, 0, 0.7)),url(../img/home/Partners.jpg);
+}
+.hp__event1{
+    background: linear-gradient(rgba(0, 0, 0, -0.7), rgba(0, 0, 0, 0.7)),url(../img/home/travel.jpg);
+}
+.hp__doers {
+    background: linear-gradient(rgba(0, 0, 0, -0.7), rgba(0, 0, 0, 0.7)),url(../img/home/Doers.JPG);
+}
+.unstyled-list {
+    padding: 10px 0;
+}
+.unstyled-list li {
+    padding:0;
+    list-style-type: none;
+}
+.btn.hp {
+    margin-top: 12px;
+    padding: 18px 30px;
+    border-radius: 200px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: auto;
+}
+.hp__brands h2 {
+    margin:2rem auto;
+}
+.col-md-3.hp__logos {
+    padding: 3rem;
+}
+.contact {
+    padding: 3rem;
+}
+.contact .btn {
+
+}
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: .75rem;
+        padding-left: .75rem;
+    }
+    .hp__form {
+        /* width: 60%;
+        margin: 0 auto; */
+    }
+}
+.callout-text {
+    margin: 4rem auto;
+}
+.travel__section {
+    margin-bottom: 4rem;
+}
+.travel__hero {
+    margin-top: 72px;
+    height: 800px;
+    background:  linear-gradient(rgba(0, 0, 0, -0.7), rgba(0, 0, 0, 0.7)), url(https://www.overseasleisuregroup.com/images/slider-10.jpg);
+}
+.event__hero {
+    margin-top: 72px;
+    height: 800px;
+    background: url(../img/events/events.jpg);
+}
+.travel__hdr {
+    font-size: 114px;
+    position: absolute;
+    z-index: 3;
+    right: 20%;
+    margin-bottom: 0;
+    line-height: .9;
+    top: 302px;
+}
+.travel__copy {
+    position: absolute;
+    right: 16%;
+    top: 41%;
+    font-size: 28px;
+    top: 408px;
+}
+.recommendations .carousel-inner {
+    height: 200px;
+}
+.carousel-indicators .active {
+    background-color: #ccc;
+}
+.carousel-indicators li {
+    background-color: #eee;
+}
+.recommendation-review {
+    width: 75%;
+    margin: 0 auto;
+}
+.recommendation-review  .company-name{
+    display: block;
+    font-weight: bold;
+    padding-top: 1rem;
+}
+.travel__section .unstyled-list li {
+    margin-bottom: .5rem;
+}
+.contact-on {
+    padding-left: 4rem;
+    padding-top: 3rem;
+    font-size: .9rem;
+}
+.contact-on .unstyled-list {
+    font-weight: bold;
+}
+.contact-on .unstyled-list .footer__text--link {
+    font-weight: normal;
+    color: #000;
+}
+.contact-form {
+    padding-top: 3rem;
+}
+.event__single {
+    height: 360px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000;
+}
+.event__single:hover .overlay {
+    opacity: .6;
+}
+.events__copy {
+    color: #fff;
+    text-align: center;
+    z-index: 100;
+    opacity: 0;
+    transition: .5s ease;
+}
+.event__single:hover .events__copy {
+    opacity: 1;
+}
