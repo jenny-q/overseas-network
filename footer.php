@@ -46,13 +46,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Privacy Policy</a>
+                        <a class="nav-link" href="<?php echo site_url('/privacy-policy') ?>">Privacy Policy</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Terms of Use</a>
+                        <a class="nav-link" href="<?php echo site_url('/terms-of-use') ?>">Terms of Use</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Careers</a>
+                        <a class="nav-link" target="_blank" href="https://www.indeed.com/cmp/Overseas-Leisure-Group">Careers</a>
                     </li>
                 </ul>
             </div>

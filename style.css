@@ -3,6 +3,9 @@ Theme Name: Overseas Network
 Author: Jennifer Quispe
 Version: 1.0
 */
+body {
+    padding-top: 39px;
+}
 .navbar {
     padding: 1rem 2rem;
 }
@@ -58,7 +61,7 @@ h6 {
     background-repeat: no-repeat !important;
 }
 .hp__hero2 {
-    background:  linear-gradient(rgba(0, 0, 0, -0.7), rgba(0, 0, 0, 0.7)), url(../img/home/dontmiss.jpg);
+    
 }
 .hp__hero3 {
     background:  linear-gradient(rgba(0, 0, 0, -0.7), rgba(0, 0, 0, 0.7)), url(https://www.overseasleisuregroup.com/images/slider-2.jpg);
