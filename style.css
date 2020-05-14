@@ -1,8 +1,56 @@
 /*
-Theme Name: Overseas Network
+Theme Name: Overseas Network 2
 Author: Jennifer Quispe
-Version: 1.0
+Version: 2.0
 */
+.logo {
+    max-width: 250px;
+}
+#menu-headermenulocation {
+    display: flex;
+    padding: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-left: auto;
+    margin-bottom: 0;
+    align-items: center;
+}
+.menu-item-has-children:hover  .sub-menu {
+    display: block;
+}
+#menu-headermenulocation li {
+    list-style-type: none;
+    position: relative;
+}
+
+.sub-menu li {
+    margin: .5rem 0;
+}
+#menu-headermenulocation li a {
+    padding: .5rem 1rem;
+    padding-right: .75rem;
+    padding-left: .75rem;
+    color: rgba(0,0,0,.5);
+}
+.menu-headermenulocation-container {
+    margin-left: auto;
+}
+.menu-item-object-custom {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 8px 20px;
+    border-radius: 200px;
+    width: auto;
+    margin-left: 1rem;
+}
+.menu-item-object-custom a {
+    color: #fff !important;
+}
+#menu-headermenulocation li a:hover {
+    color: rgba(0,0,0,.7);
+}
 body {
     padding-top: 39px;
 }
@@ -12,7 +60,6 @@ body {
 .hp__video {
     position: relative;
     height: 800px;
-    
 }
 h1, 
 h2, 
@@ -55,13 +102,39 @@ h6 {
     text-align: left;
     padding: 10%;
     color: #fff;
-    background-position: 50% 50%, 0px 0px !important;
-    background-size: cover, cover !important;
+    background-position: center !important;
+    background-size: 100% !important;
     background-attachment: fixed, fixed !important;
     background-repeat: no-repeat !important;
 }
+.hp__section.travel {
+    background-size: cover !important;
+}
 .hp__hero2 {
     
+}
+#wpadminbar {
+    display: none;
+}
+.navbar {
+    background: #fff !important;
+}
+.nav-link {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.nav-item .dropdown-menu {
+    border: none;
+}
+.booknow {
+    padding: 8px 20px;
+    border-radius: 200px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: auto;
+    color: #fff !important;
+    margin-left: 1rem;
 }
 .hp__hero3 {
     background:  linear-gradient(rgba(0, 0, 0, -0.7), rgba(0, 0, 0, 0.7)), url(https://www.overseasleisuregroup.com/images/slider-2.jpg);
@@ -97,11 +170,20 @@ h6 {
 .hp__brands h2 {
     margin:2rem auto;
 }
-.col-md-3.hp__logos {
-    padding: 3rem;
+.hp__logos {
+    padding: 1rem 2rem;
+    justify-content: center;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+.hp__logos img {
+    width: 150px;
 }
 .contact {
     padding: 3rem;
+    margin-top: 5rem;
 }
 .contact .btn {
 
@@ -119,16 +201,22 @@ h6 {
 .callout-text {
     margin: 4rem auto;
 }
-.travel__section {
-    margin-bottom: 4rem;
+.travel__section .image {
+    height: 343px;
+    background-position: center !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
 }
+.travel__section .copy {
+    align-self: center;
+    padding: 0 3rem;
+
+}
+
 .travel__hero {
-    margin-top: 72px;
     height: 800px;
-    background:  linear-gradient(rgba(0, 0, 0, -0.7), rgba(0, 0, 0, 0.7)), url(https://www.overseasleisuregroup.com/images/slider-10.jpg);
 }
 .event__hero {
-    margin-top: 72px;
     height: 800px;
     background: url(../img/events/events.jpg);
 }
@@ -140,6 +228,10 @@ h6 {
     margin-bottom: 0;
     line-height: .9;
     top: 302px;
+    color: #fff;
+}
+.travel__hdr.event {
+    font-size: 85px;
 }
 .travel__copy {
     position: absolute;
@@ -147,6 +239,7 @@ h6 {
     top: 41%;
     font-size: 28px;
     top: 408px;
+    color: #fff;
 }
 .recommendations .carousel-inner {
     height: 200px;
@@ -186,9 +279,9 @@ h6 {
 }
 .event__single {
     height: 360px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -214,7 +307,553 @@ h6 {
     z-index: 100;
     opacity: 0;
     transition: .5s ease;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
 }
 .event__single:hover .events__copy {
     opacity: 1;
+}
+.hp__section.heroes {
+    height: 800px;
+}
+.hp__section.heroes h2 {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    color: #fff;
+    font-size: 3rem;
+}
+.event__logos {
+    padding: 4rem 0;
+}
+.event__logo--container {
+    padding: 1rem 2rem;
+    justify-content: center;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+.event__logo--container img {
+    width: 110px;
+}
+
+.care__hero {
+    height: 550px;
+    padding: 6%;
+}
+.care__callout {
+    background: rgba(0, 0, 0, .45);
+    padding: 4rem 3rem;
+    text-align: left;
+}
+.care__callout h1 {
+    font-size: 1.5rem;
+}
+.care__callout li {
+    font-size: 1.1rem;
+}
+.cursive {
+    font-style: italic;
+}
+.carefree {
+    text-align: center;
+}
+.concierge .travel__section {
+    margin-bottom: 4rem;
+}
+.hotel__copy {
+    background-color: rgba(0,0,0,.8);
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: .5rem;
+}
+.carefree__badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.carefree__image {
+    width: 100%;
+    height: 300px;
+    background-size: cover !important;
+    background-position: center !important;
+    position: relative;
+}
+.carefree__tabs {
+    justify-content: center;
+    margin: 2rem auto;
+}
+.carefree__tabs .nav-link {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    margin: 0 1rem;
+    border-radius: 0;
+    min-width: 115px;
+}
+.carefree__tabs .nav-link.active {
+    background-color: #0069d9;
+}
+.care__callout .btn {
+    color: #000;
+}
+.event__case--gallery img {
+    width: 100%;
+    height: auto;
+}
+.event_case {
+    max-width: 1600px;
+}
+.event__case--copy {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 105px;
+}
+.support__image {
+    height: 350px;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    display: flex;
+}
+.support h2 {
+    color: #000;
+}
+.support p {
+    color: #000;
+}
+
+@media (max-width: 1024px) {
+    .hp__section {
+        height: 500px;
+        text-align: left;
+        padding: 10%;
+        color: #fff;
+        background-position: center !important;
+        background-size: 100% !important;
+        background-attachment: initial !important;
+        background-repeat: no-repeat !important;
+    }
+    .event__hero {
+        height: 500px;
+    }
+    .hp__video {
+        position: relative;
+        height: 575px;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        font-size: 13px;
+    }
+    .travel__section .image {
+        background-size: cover !important;
+    }
+    .travel__hdr.event {
+        font-size: 59px;
+    }
+    .care__callout {
+        padding: 1rem ;
+    }
+}
+
+
+
+@media (max-width:1300px) {
+    .hp__video {
+        height: 400px;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        font-size: 13px;
+    }
+    .hp__section {
+        height: 500px;
+    }
+}
+
+.blog {
+    max-width: 1600px;
+    margin: 2rem auto;
+}
+.recent__posts--list a {
+    display: flex;
+}
+.recent__posts--list img {
+    width:100%;
+    height: auto;
+}
+.blog__row {
+    padding: 2rem;
+}
+.blog__details {
+    display: flex;
+    align-items: center;
+}
+.blog__img img {
+    max-width: 300px;
+    height: auto;
+    padding-right: 1rem;
+}
+.blog__img--single img {
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 2rem;
+}
+.blog__info a {
+    text-decoration: none;
+    color: #000;
+}
+.blog__info a.btn {
+    text-decoration: none;
+    color: #fff;
+}
+.blog__info p {
+    color: #666;
+}
+.blog__sidebar a {
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px dotted #ccc;
+    padding: .5rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.blog__sidebar img {
+    max-width: 120px;
+    padding-right: .5rem;
+}
+.blog__sidebar p {
+    margin: .5rem 0;
+}
+.archive__list a {
+    padding-bottom: .5rem;
+}
+.slider-caption-class {
+    margin: .5rem 0;
+}
+.cat__list ul {
+    margin: 0;
+}
+.categories ul {
+    padding: 0;
+}
+.cat__list {
+    display: none;
+}
+.blog__sidebar {
+    margin: 4rem 0;
+}
+.archive__list a {
+    border: none;
+    font-size: 14px;
+}
+.support__image h3 {
+    align-self: center;
+    margin: 0 auto;
+}
+#support .care__hero {
+    height: auto;
+}
+.materials {
+    max-width: 40%;
+}
+.material__tab .event__single {
+    text-align: center;
+}
+.material__row {
+    align-items: center;
+}
+.material__tab .callout {
+    margin: 1rem auto;
+    text-align: center;
+}
+.materials__btn {
+    margin-bottom: .5rem;
+}
+.materials__btn.luxury {
+    background-color: #0f4e5d;
+    border: #0f4e5d;
+}
+.materials__btn.destination {
+    background-color:#ffc827;
+    border: #ffc827;
+}
+.materials__btn.castaway {
+    background-color:#45b6b4;
+    border: #45b6b4;
+}
+
+.row.survey {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.row.survey.intl {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.survey .travel {
+    height: 300px;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    position: relative;
+    text-align: center;
+}
+.badge {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border-radius: 25px;
+    margin: 0 10px;
+    color: #000;
+    padding: 5px 10px;
+    background: #ffc827;
+}
+.badge.active {
+    background: #45b6b4;
+}
+.nav.language {
+    margin-bottom: 1rem;
+}
+.support__link {
+    color: #fff;
+    text-decoration: none;
+}
+.support__link:hover {
+    color: #eee;
+    text-decoration: underline;
+}
+.travelsurvey {
+    margin-top: 4rem;
+}
+.searchHotels #hotelTable_wrapper {
+    max-width: 1500px;
+    margin: 2rem auto;
+}
+@media (max-width:1100px) {
+    #menu-headermenulocation li a {
+        font-size: 15px;
+    }
+}
+@media (min-width:991px) {
+    #menu-headermenulocation .menu-item-has-children > a:after {
+        color: #444;
+        content: ' ▾';
+    }
+    .sub-menu {
+        background: #fff;
+        display: none;
+        position: absolute;
+        padding: 1rem;
+    }
+}
+@media (max-width:991px) {
+    #menu-headermenulocation {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .sub-menu {
+        padding: 0;
+    }
+    .navbar {
+        padding: 1rem;
+    }
+    .logo {
+        max-width: 210px;
+    }
+    #menu-headermenulocation li {
+        margin: 1rem 0;
+    }
+}
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+    .hp__section {
+        background-size: cover !important;
+    }
+}
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) { 
+    .hp__section {
+        background-size: cover !important;
+    }
+}
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .hp__section {
+        background-size: cover !important;
+    }
+}
+
+@media (max-width: 500px) {
+    #hpHeroVideo {
+        width: 841px;
+    }
+    .hp__section.blog__bg {
+        height: 210px !important;
+    }
+    .hp__video {
+        height: 471px;
+    }
+    .blog__title {
+        display: none;
+    }
+    .page-id-12 .hp__section .col-md-6 img {
+        margin-bottom: 1rem;
+    }
+    .page-id-14 .hp__section .col-md-6 img {
+        margin-bottom: 1rem;
+    }
+    .page-id-16 .hp__section .col-md-6 img {
+        margin-bottom: 1rem;
+    }
+    .hp__section.support {
+        padding: 0;
+    }
+    .blog__details {
+        flex-direction: column;
+        padding: 0;
+    }
+    .blog {
+        margin: 0; 
+    }
+    .blog__img img {
+        max-width: 100%;
+        padding-right: 0;
+        margin-bottom: 1rem;
+    }
+    .blog__row {
+        padding: 1rem 1rem 2rem;
+    }
+    .concierge .travel__section img {
+        margin-bottom: 1rem;
+    }
+    .hp__section.support .col-md-6 {
+        margin-bottom: 1rem;
+    }
+    .gradientHero h2 {
+        top: 31%;
+        font-size: 2rem;
+    }
+    .hp__logos {
+        width: 49%;
+    }
+    .hp__section{
+        position: relative;
+    }
+    .contact-on {
+        padding-left: 0;
+    }
+    body {
+        padding-top: 28px;
+    }
+    .hp__section.heroes {
+        height: 213px;
+    }
+    .travel__hdr {
+        font-size: 60px;
+        position: unset;
+    }
+    .travel__copy { 
+        font-size: 25px;
+        position: unset;
+    }
+    .travel__section .copy {
+        padding: 1rem;
+    }
+    .event__logo--container {
+        width: 49%;
+        flex: 0 0 49% !important;
+        max-width: 49% !important;
+    }
+    .hp__section h2 {
+        font-size: 1.4rem;
+    }
+    .page-id-109 h2 {
+        font-size: 1.4rem !important;
+    }
+    section h2 {
+        font-size: 1.4rem !important;
+    }
+    section h3 {
+        font-size: 1.4rem !important;
+    }
+    .hp__video h2 {
+        padding: 0 2rem;
+    }
+    .hp__section .btn-primary.hp {
+        display: none;
+    }
+    .hp_4 {
+        color: #000;
+    }
+    .hp_5 {
+        color: #000;
+    }
+    .hp_6 {
+        color: #000;
+    }
+    .care__callout .ok__text {
+        font-size: 1.2rem;
+    }
+    .hp__section.travel {
+        height: auto;
+    }
+    .carefree__tabs .nav-link {
+        margin: 0 .2rem;
+        min-width: 78px;
+    }
+    .materials {
+        max-width: 100% !important;
+    }
+    .survey .travel {
+        height: 185px!important;
+        background-size: 100% !important;
+    }
+    .row.survey .col-md-6 {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width:414px) {
+    .hp__section {
+        height: 411px;
+    }
+    .hp__video {
+        height: 450px;
+    }
+}
+@media (max-width:375px) {
+    .hp__section {
+        height: 360px;
+    }
+}
+@media (max-width:320px) {
+    .hp__section {
+        height: 320px;
+    }
+}
+.hp__section.blog__bg {
+    height: 400px;
+}
+.blog__title {
+    visibility: hidden;
 }

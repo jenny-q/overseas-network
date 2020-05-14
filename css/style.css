@@ -48,7 +48,6 @@ h6 {
     padding: 10%;
     color: #fff;
     background-position: 50% 50%, 0px 0px !important;
-    background-size: cover, cover !important;
     background-attachment: fixed, fixed !important;
     background-repeat: no-repeat !important;
 }
@@ -103,11 +102,8 @@ h6 {
         padding-right: .75rem;
         padding-left: .75rem;
     }
-    .hp__form {
-        /* width: 60%;
-        margin: 0 auto; */
-    }
 }
+
 .callout-text {
     margin: 4rem auto;
 }
@@ -209,4 +205,9 @@ h6 {
 }
 .event__single:hover .events__copy {
     opacity: 1;
+}
+@media (max-width: 320px) {
+    .hp__section {
+        height: auto;
+    }
 }

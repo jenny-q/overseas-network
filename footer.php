@@ -2,10 +2,25 @@
 
 <section class="container contact">
         <h2 class="h1 text-center">Experience the power of the network</h2>
-        <div class="row">
-            <div class="col-md-7 contact-form">
-                <h2 class="h6">Contact Us</h2>
-                <form class="hp__form">
+            <div class="row">
+                    <?php 
+                        $overseasFooter  = new WP_Query(array(
+                            'posts_per_page' => 1,
+                            'post_type' => 'custom_footer'
+                        ));
+
+                        while($overseasFooter -> have_posts()) {
+                            $overseasFooter->the_post(); ?>
+                                <div class="col-md-7 contact-form">
+                                    <?php the_field('contact_form') ;?>
+                                </div>
+                                <div class="col-md-5 contact-on">
+                                    <?php the_field('overseas_information') ;?>
+                                </div>
+                        <?php } ?>
+
+                    
+                <form class="hp__form d-none">
                     <div class="form-group">
                         <label for="exampleFormControlInput1" class="sr-only">Name</label>
                         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name">
@@ -20,22 +35,7 @@
                     <button type="submit" class="btn btn-primary hp">Submit</button>
                 </form>
             </div>
-            <div class="col-md-5 contact-on">
-                <h2 class="h6">Our Office</h2>
-                <ul class="unstyled-list">
-                    <li>Miami Office: <a href="tel:+1-786-276-8686" class="footer__text--link">+1.786.276.8686</a>
-                    </li>
-                    <li>UK Office: <a href="tel:+44-203-608-4344" class="footer__text--link">+44.203.608.4344</a>
-                    </li>
-                    <li>FR Office: <a href="tel:+33-182-882-736" class="footer__text--link">+33.1.82.88.27.36</a>
-                    </li>
-                </ul>
-                <address>
-                    814 Ponce de Leon Blvd #400<br>
-                    Coral Gables, FL 33134
-                </address>
-                <address>ox@overseasinternational.com</address>
-            </div>
+            
         </div>
         
     </section>
